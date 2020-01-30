@@ -8,6 +8,7 @@ function speechToEmotion() {
   recognition.onresult = function(event) {
     const results = event.results
     const transcript = results[results.length-1][0].transcript
+    console.log(transcript)
 
     setEmoji('searching')
 
